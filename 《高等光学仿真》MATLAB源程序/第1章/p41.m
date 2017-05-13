@@ -1,0 +1,13 @@
+x = linspace(-4*pi,4*pi,100);
+subplot(3,1,1)
+plot(x, tan(x))
+axis([-Inf Inf -10 10])
+title('plot')
+subplot(3,1,2)
+fplot('tan(x)', [-4*pi 4*pi])
+axis([-Inf Inf -10 10])
+title('fplot')
+subplot(3,1,3)
+ezplot(@(x)tan(x),[-4*pi 4*pi])
+axis([-Inf Inf -10 10])
+title('ezplot')
